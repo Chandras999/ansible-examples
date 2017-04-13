@@ -1,6 +1,6 @@
 ---
 - name: Install apache server
-  apt:
+  yum:
     name: "{{ item }}"
     state: present
   with_items:
