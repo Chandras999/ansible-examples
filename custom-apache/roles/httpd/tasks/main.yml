@@ -13,6 +13,7 @@
     src: index.html.raw
     dest: /var/www/html/index.html
     mode: 0644
+  notify: restart httpd
 
 - name: starting apache service
   service:
